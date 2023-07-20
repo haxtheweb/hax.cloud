@@ -5,6 +5,7 @@ import { importMetaAssets } from '@web/rollup-plugin-import-meta-assets';
 import { terser } from 'rollup-plugin-terser';
 import { generateSW } from 'rollup-plugin-workbox';
 import path from 'path';
+import copy from 'rollup-plugin-copy';
 
 export default {
   input: 'index.html',
@@ -30,6 +31,22 @@ export default {
     terser(),
     /** Bundle assets references via import.meta.url */
     importMetaAssets(),
+    copy({
+      targets: [
+        {
+          src: 'node_modules/@lrnwebcomponents/simple-icon/lib/svgs',
+          dest: 'dist',
+        },
+        {
+          src: 'assets',
+          dest: 'dist/assets',
+        },
+        {
+          src: 'wc-registry.json',
+          dest: 'dist',
+        },
+      ],
+    }),
     /** Compile JS to a lower language target */
     babel({
       babelHelpers: 'bundled',

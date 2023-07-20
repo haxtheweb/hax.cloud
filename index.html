@@ -1,28 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
+  <link rel="preload" href="./node_modules/@lrnwebcomponents/haxcms-elements/lib/core/haxcms-site-builder.js"
+    as="script" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
   <base href="/">
-
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+  <meta name="generator" content="HAXcms">
+  <meta name="description" content="A HAXCMS site">
+  <meta name="theme-color" content="#3f51b5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="robots" content="index, follow">
+  <meta name="application-name" content="My site">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My App">
+  <meta name="msapplication-TileImage" content="assets/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#3f51b5">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192x192.png">
+  <title>Welcome to HAX cloud</title>
   <style>
-    html,
     body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
+      min-height: 98vh;
     }
-  </style>
-  <title>hax-cloud</title>
+    </style>
 </head>
 
-<body>
+<body vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/">
   <hax-cloud></hax-cloud>
-
+  <haxcms-site-builder id="site" style="display:hidden;"></haxcms-site-builder>
   <script type="module" src="./src/hax-cloud.js"></script>
+  <script>window.WCAutoloadBasePath = "/node_modules/";window.WCGlobalBasePath = "/node_modules/";window.__appCustomEnv=true;window.HAXCMSContext="userfs";window.__appCDN="./";</script>
+  <script src="./assets/build-haxcms.js"></script>
+  <script src="./assets/build.js"></script>
 </body>
 
 </html>
