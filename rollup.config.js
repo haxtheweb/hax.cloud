@@ -34,17 +34,9 @@ export default {
     copy({
       targets: [
         {
-          src: 'node_modules/@lrnwebcomponents/simple-icon/lib/svgs',
+          src: 'assets/',
           dest: 'dist',
-        },
-        {
-          src: 'assets',
-          dest: 'dist/assets',
-        },
-        {
-          src: 'wc-registry.json',
-          dest: 'dist',
-        },
+        }
       ],
     }),
     /** Compile JS to a lower language target */

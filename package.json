@@ -11,10 +11,7 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "lit": "^2.7.6",
-    "@lrnwebcomponents/file-system-broker": "7.0.15",
-    "@lrnwebcomponents/simple-icon": "7.0.15",
-    "@lrnwebcomponents/haxcms-elements": "7.0.15"
+
   },
   "devDependencies": {
     "rollup-plugin-copy": "3.4.0",

@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="preload" href="./node_modules/@lrnwebcomponents/haxcms-elements/lib/core/haxcms-site-builder.js"
+  <link rel="preload" href="https://cdn.webcomponents.psu.edu/cdn/build/es6/node_modules/@lrnwebcomponents/haxcms-elements/lib/core/haxcms-site-builder.js"
     as="script" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Put your description here.">
-  <base href="/">
+  <link rel="preconnect" crossorigin href="https://fonts.googleapis.com">
+  <link rel="preconnect" crossorigin href="https://cdnjs.cloudflare.com">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
-  <meta name="generator" content="HAXcms">
-  <meta name="description" content="A HAXCMS site">
+  <meta name="description" content="HAX authorware that reads and writes files directly on your computer">
+  <base href="/">
+  <meta name="generator" content="HAX cloud">
   <meta name="theme-color" content="#3f51b5">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="robots" content="index, follow">
-  <meta name="application-name" content="My site">
+  <meta name="application-name" content="HAX Cloud">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="My App">
+  <meta name="apple-mobile-web-app-title" content="HAX Cloud">
   <meta name="msapplication-TileImage" content="assets/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#3f51b5">
   <meta name="msapplication-tap-highlight" content="no">
@@ -27,21 +27,24 @@
   <link rel="apple-touch-icon" sizes="144x144" href="assets/icon-144x144.png">
   <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192x192.png">
   <title>Welcome to HAX cloud</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 98vh;
-    }
-    </style>
-</head>
+  <script>
+    window.HAXCMSContext="userfs";
+    window.__appCDN = "https://cdn.webcomponents.psu.edu/cdn/";
+  </script>
+  <script src="https://cdn.webcomponents.psu.edu/cdn/build.js"></script>
+  <script src="https://cdn.webcomponents.psu.edu/cdn/build-haxcms.js"></script>
 
-<body vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/">
-  <hax-cloud></hax-cloud>
-  <haxcms-site-builder id="site" style="display:hidden;"></haxcms-site-builder>
-  <script type="module" src="./src/hax-cloud.js"></script>
-  <script>window.WCAutoloadBasePath = "/node_modules/";window.WCGlobalBasePath = "/node_modules/";window.__appCustomEnv=true;window.HAXCMSContext="userfs";window.__appCDN="./";</script>
-  <script src="./assets/build-haxcms.js"></script>
-  <script src="./assets/build.js"></script>
-</body>
-
+    <link rel="stylesheet" href="https://cdn.webcomponents.psu.edu/cdn/build/es6/node_modules/@lrnwebcomponents/haxcms-elements/lib/base.css" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 98vh;
+      }
+      </style>
+  </head>
+  
+  <body vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/">
+    <hax-cloud></hax-cloud>
+    <haxcms-site-builder id="site" style="display:hidden;"></haxcms-site-builder>
+  </body>
 </html>
