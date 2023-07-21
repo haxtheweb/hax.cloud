@@ -36,6 +36,14 @@ export default {
         {
           src: 'assets/',
           dest: 'dist',
+        },
+        {
+          src: 'theme/',
+          dest: 'dist',
+        },
+        {
+          src: 'custom/',
+          dest: 'dist',
         }
       ],
     }),
